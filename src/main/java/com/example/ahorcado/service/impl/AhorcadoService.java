@@ -1,10 +1,16 @@
 package com.example.ahorcado.service.impl;
 
+import com.example.ahorcado.repository.impl.AhorcadoRepository;
 import com.example.ahorcado.service.IAhorcadoService;
 
 import java.util.Random;
 
 public class AhorcadoService implements IAhorcadoService {
+    private AhorcadoRepository ahorcadoRepository;
+
+    public AhorcadoService(AhorcadoRepository ahorcadoRepository){
+        this.ahorcadoRepository = ahorcadoRepository;
+    }
     @Override
     public String getPalabraSecreta() {
         String [] palabras = {"melon","platano","naranja","manzana","sandia","pera","kiwi","mango","pimiento","cebolla"};
