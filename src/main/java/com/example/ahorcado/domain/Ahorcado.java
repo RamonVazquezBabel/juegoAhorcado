@@ -3,7 +3,7 @@ package com.example.ahorcado.domain;
 public class Ahorcado {
     private String palabraSecreta;
     private char[] palabraGuiones;
-    private boolean juegoTerminado;
+
 
     public Ahorcado() {
     }
@@ -24,11 +24,5 @@ public class Ahorcado {
         this.palabraGuiones = palabraGuiones;
     }
 
-    public boolean isJuegoTerminado() {
-        return juegoTerminado;
-    }
 
-    public void setJuegoTerminado(boolean juegoTerminado) {
-        this.juegoTerminado = juegoTerminado;
-    }
 }

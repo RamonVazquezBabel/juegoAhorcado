@@ -27,5 +27,14 @@ public class AhorcadoService implements IAhorcadoService {
             palabraGuiones[i] = '_';
         }
         return palabraGuiones;
+        }
+
+    @Override
+    public boolean hayGuiones(char[] hayGuiones) {
+        boolean hayGuionesIncompletos = false;
+        for(char l : hayGuiones){
+            if(l == '_') hayGuionesIncompletos = true;
+        }
+        return hayGuionesIncompletos;
     }
 }
